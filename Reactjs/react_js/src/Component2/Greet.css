@@ -1,0 +1,25 @@
+body {
+  background-color: lightslategray;
+}
+
+h1{
+  font-family: 'Yeon Sung', cursive;
+  text-align: center;
+  color: rgb(0, 0, 226);
+  font-size: 4.3rem;
+  border-radius: 50px;
+  position: relative;
+  left: 14rem;
+  background-color: aqua;
+  width: 50rem;  
+}
+p{
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(151, 22, 22);
+  text-align: center;
+  font-size: 2.3rem;
+}
+.greeting{
+  position: relative;
+    top: 5rem;
+}

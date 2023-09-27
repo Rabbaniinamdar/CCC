@@ -1,0 +1,90 @@
+.header {
+  background-color: rgb(255, 166, 0);
+  box-shadow: 2px 1px 6px 0px;
+}
+img {
+  width: 10rem;
+  height: 5rem;
+}
+.heading {
+  position: absolute;
+  top: 20px;
+  left: 140px;
+  color: midnightblue;
+  font-size: 1.7rem;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.main_note {
+  align-items: center;
+  display: flex;
+  position: absolute;
+  left: 35%;
+  top: 20%;
+}
+input,
+textarea {
+  width: 25rem;
+  height: 5rem;
+  background-color: white;
+  border: 2px solid rgb(255, 255, 255);
+  outline: none;
+  border-radius: 10px;
+}
+input {
+  font-size: 30px;
+}
+form {
+  border-radius: 10px;
+  /* border: 2px solid rgb(0, 0, 0); */
+  box-shadow: 7px 7px 15px 0px;
+}
+.plus_sign {
+  box-shadow: 2px 1px 6px 0px;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  font-size: 50%;
+  display: block;
+  color: forestgreen;
+  padding: 7px;
+}
+.note {
+  position: relative;
+  top: 300px;
+  width: 18.5rem;
+  height: 10rem;
+  float: left;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px 0px;
+  overflow: hidden;
+  padding: 10px;
+}
+.note p {
+  font-size: 22px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.delete {
+  border-radius: 50%;
+  box-shadow: 2px 1px 6px 0px;
+  position: relative;
+  color: brown;
+  left: 14rem;
+  padding: 8px;
+}
+.delete:hover {
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+.plus_sign:hover {
+  background-color: green;
+  color: rgb(255, 255, 255);
+}
+footer p {
+  font-size: 20px;
+  position: fixed;
+  top: 38rem;
+  left: 37rem;
+}

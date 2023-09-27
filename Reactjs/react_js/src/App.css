@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+body {
+  background-color: lightslategray;
+}
+img {
+  margin: 10px;
+  width: 390px;
+  border: 2px solid black;
+}
+h1{
+  font-family: 'Yeon Sung', cursive;
+  text-align: center;
+  color: rgb(0, 0, 226);
+}
+p{
+  font-family: 'Yeon Sung', cursive;
+  color: rgb(151, 22, 22);
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+@media (min-width:350px) and (max-width:500px){
+  .imggen{
+    margin-left: 3rem;
+  }
+}

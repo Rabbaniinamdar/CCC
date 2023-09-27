@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Yeon+Sung&display=swap");
 :root {
-  --yellow: red;
-  --yellow: violet;
+  --yellow: Purple;
 }
 
 * {
-  font-family: "Nunito", sans-serif;
+  font-family: "Mulish", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +26,7 @@ html {
 }
 
 html::-webkit-scrollbar {
-  width: 1.4rem;  
+  width: 1.4rem;
 }
 
 html::-webkit-scrollbar-track {
@@ -40,20 +38,35 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: #111;
+  background: #ffffffb8;
   overflow-x: hidden;
   padding-left: 35rem;
 }
-
+.nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  list-style: none;
+}
+.nav a {
+  color: #000000;
+  font-size: 20px;
+  padding: 40px;
+  outline: none;
+}
+.nav a:hover {
+  color: darkturquoise;
+}
 section {
   min-height: 40vh;
   padding: 1rem;
 }
 
 .btn {
-  padding: 0.7rem 3rem;
-  background: #333;
-  color: #fff;
+  padding: 1.2rem 3rem;
+  background: purple;
+  color: white;
   cursor: pointer;
   margin-top: 1rem;
   font-size: 2rem;
@@ -75,7 +88,7 @@ section {
   font-size: 4rem;
   padding: 1rem;
   border-bottom: 0.1rem solid #fff4;
-  color: #fff;
+  color: #000000;
 }
 
 .heading span {
@@ -89,7 +102,7 @@ header {
   z-index: 1000;
   height: 100%;
   width: 35rem;
-  background: #1a1a1a;
+  background: rgba(50, 161, 171, 0.86);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,15 +119,14 @@ header .user img {
   border: 0.7rem solid rgb(0, 19, 128);
 }
 
-
 header .user .name {
-  font-size: 3.5rem;
-  color: yellow;
+  font-size: 3.2rem;
+  color: rgb(0, 0, 69);
 }
 
 header .user .post {
   font-size: 2rem;
-  color: violet;
+  color: var(--yellow);
 }
 
 header .navbar {
@@ -124,39 +136,45 @@ header .navbar {
 header .navbar ul {
   list-style: none;
   padding: 1rem 3rem;
+  line-height: 2rem;
 }
 
 header .navbar ul li a {
   display: block;
-  padding: 1rem;
-  margin: 1.5rem 0;
-  background: #333;
-  color: #fff;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  color: #000000;
   font-size: 2rem;
   border-radius: 5rem;
 }
 
+.mail {
+  text-transform: lowercase;
+
+  font-size: 19px;
+}
+
 header .navbar ul li a:hover {
-  background: var(--yellow);
+  background: rgb(140, 63, 216);
 }
 .e-name {
   text-transform: none;
 }
-.top-info{
-  color: #eee;
+.top-info {
+  color: #000000;
 }
-.info a{
-  color: violet;
+.info a {
+  color: var(--yellow);
 }
-.link:hover{
-  color:rgb(255, 0, 85) ;
+.link:hover {
+  color: rgb(255, 0, 85);
 }
 #menu {
   position: fixed;
   top: 2rem;
   right: 2rem;
   background: #333;
-  color: #fff;
+  color: #000000;
   cursor: pointer;
   font-size: 2.5rem;
   padding: 1rem 1.5rem;
@@ -168,17 +186,17 @@ header .navbar ul li a:hover {
   display: flex;
   justify-content: center;
   flex-flow: column;
-  padding: 0 15rem;
+  padding: 10rem 15rem;
 }
 
 .home h3 {
   font-size: 2.5rem;
-  color: #fff;
+  color: #000000;
 }
 
 .home h1 {
   font-size: 5rem;
-  color: #fff;
+  color: #020000;
 }
 
 .home h1 span {
@@ -187,7 +205,7 @@ header .navbar ul li a:hover {
 
 .home p {
   font-size: 2rem;
-  color: #eee;
+  color: #000000;
   padding: 1rem 0;
 }
 
@@ -213,7 +231,7 @@ header .navbar ul li a:hover {
 }
 
 .about .row .info h3 span {
-  color: #eee;
+  color: #000000;
   padding: 0 0.5rem;
 }
 
@@ -226,7 +244,7 @@ header .navbar ul li a:hover {
 
 .about .row .counter .box {
   width: 20rem;
-  background: #222;
+  background: #000c48;
   text-align: center;
   padding: 2rem;
   margin: 2rem;
@@ -234,12 +252,12 @@ header .navbar ul li a:hover {
 
 .about .row .counter .box span {
   font-size: 4rem;
-  color: var(--yellow);
+  color: rgb(228, 0, 228);
 }
 
 .about .row .counter .box h3 {
   font-size: 2rem;
-  color: #fff;
+  color: #eeeeee;
 }
 
 .education .box-container {
@@ -255,28 +273,28 @@ header .navbar ul li a:hover {
   width: 26rem;
   margin: 4rem 1rem;
   padding-left: 4rem;
-  border-left: 0.2rem solid #fff;
+  border-left: 0.2rem solid #000000;
   position: relative;
 }
 
 .education .box-container .box span {
   font-size: 1.3rem;
-  background: #222;
-  color: #fff;
+  background: #001139;
+  color: #ffffff;
   border-radius: 5rem;
   padding: 0.5rem 2.5rem;
 }
 
 .education .box-container .box h3 {
   font-size: 2rem;
-  color: #fff;
+  color: #000000;
   padding-top: 1.5rem;
-  color: yellow;
+  color: var(--yellow);
 }
 
 .education .box-container .box p {
   font-size: 1.6rem;
-  color: #eee;
+  color: #000000;
   padding: 1rem 0;
   line-height: 2.3rem;
 }
@@ -291,8 +309,8 @@ header .navbar ul li a:hover {
   line-height: 5rem;
   text-align: center;
   font-size: 2rem;
-  color: #fff;
-  background: var(--yellow);
+  color: #000000;
+  background: rgb(179, 1, 179);
 }
 
 .portfolio .box-container {
@@ -304,8 +322,8 @@ header .navbar ul li a:hover {
 }
 
 .portfolio .box-container .box {
-  height: 20rem;
-  width: 26rem;
+  height: 25rem;
+  width: 36rem;
   border-radius: 1rem;
   margin: 2rem;
   overflow: hidden;
@@ -321,27 +339,43 @@ header .navbar ul li a:hover {
 .portfolio .box-container .box:hover img {
   transform: scale(1.2);
 }
-.project-container{
+.project-container {
   margin: 4rem;
 }
-.project-container .project{
-  color: #eee;
+.project-container .project {
+  color: #000000;
   font-size: 1.7rem;
   line-height: 2.5rem;
 }
-.project-container h1{
-  color: yellow;
+.project-container h1 {
+  color: var(--yellow);
   padding-bottom: 1.5rem;
 }
-.project-container :nth-child(3){
-  color: aqua;
+.project-container :nth-child(3) {
+  color: rgb(0, 0, 0);
   margin-top: 1.6rem;
 }
-.project span a{
-  color: blue;
+.project span a {
+  color: lightgreen;
+  font-size: 12px;
 }
-.project span a:hover{
+.project span a:hover {
   color: rgb(255, 0, 85);
+}
+
+.cert h1 {
+  font-size: 20px;
+  line-height: 4rem;
+  color: var(--yellow);
+}
+.project h4 {
+  color: Orange;
+}
+.cert p {
+  color: white;
+}
+.certi-link {
+  font-size: 12px;
 }
 .contact .row {
   display: flex;
@@ -367,7 +401,7 @@ header .navbar ul li a:hover {
   padding: 1.5rem;
   margin: 1rem 0;
   background: #3333;
-  color: #fff;
+  color: #000000;
   text-transform: none;
   font-size: 1.7rem;
   width: 100%;
@@ -376,15 +410,22 @@ header .navbar ul li a:hover {
 .contact .row form .box::placeholder {
   text-transform: capitalize;
 }
-
+.google-map {
+  position: relative;
+  top: -4rem;
+}
 .contact .row form .message {
   height: 15rem;
   resize: none;
 }
+iframe {
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+}
 
 .contact .row .content .title {
   text-transform: uppercase;
-  color: #fff;
+  color: #000000;
   font-size: 3rem;
   padding-bottom: 2rem;
 }
@@ -393,7 +434,7 @@ header .navbar ul li a:hover {
   display: flex;
   align-items: center;
   font-size: 2rem;
-  color: #eee;
+  color: #000000;
   padding: 1rem 0;
   font-weight: normal;
 }
@@ -403,18 +444,10 @@ header .navbar ul li a:hover {
   color: var(--yellow);
 }
 
-.top {
-  position: fixed;
-  bottom: 7.5rem;
-  right: 2rem;
-  z-index: 100;
-  display: none;
-}
-
 /* media queries  */
 @media (max-width: 1900px) {
-  section{
-    min-height: 80vh;
+  section {
+    min-height: 40vh;
   }
 }
 @media (max-width: 1200px) {
@@ -423,10 +456,10 @@ header .navbar ul li a:hover {
   }
 
   .home {
-    padding: 1rem 4rem;
+    padding: 10rem 4rem;
   }
-  section{
-    min-height: 40vh;
+  section {
+    min-height: 35vh;
   }
 }
 
@@ -437,6 +470,7 @@ header .navbar ul li a:hover {
 
   #menu {
     display: block;
+    background-color: rgb(197, 0, 197);
   }
 
   header.toggle {
@@ -446,7 +480,7 @@ header .navbar ul li a:hover {
   body {
     padding: 0;
   }
-  section{
+  section {
     min-height: 40vh;
   }
 }
@@ -455,24 +489,34 @@ header .navbar ul li a:hover {
   html {
     font-size: 50%;
   }
-  section{
-    min-height: 40vh;
+  section {
+    min-height: 30vh;
   }
-
+  .nav {
+    display: none;
+  }
+  .typed {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 400px) {
+  .typed {
+    font-size: 28px;
+  }
   header {
     width: 100vw;
   }
-  section{
+  section {
     min-height: 40vh;
   }
 
   .heading {
     margin: 0 3rem;
   }
-
+  .google-map {
+    margin-top: 20px;
+  }
   .about .row .counter .box {
     width: 100%;
   }
@@ -488,4 +532,207 @@ header .navbar ul li a:hover {
   .contact .row form {
     margin: 3rem 0;
   }
+}
+.typed {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 5s 1s steps(100, end) forwards;
+  width: 0;
+}
+@keyframes typing {
+  form {
+    width: 0;
+  }
+  to {
+    width: 100rem;
+  }
+}
+
+.wave {
+  animation: wave-animation 2.5s infinite 70% 70%;
+  display: inline-block;
+  font-size: 3.5rem;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* For demonstration purposes only: */
+
+/* Import Google font - Poppins */
+
+.portfolio-card {
+  margin: 15px;
+}
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top:40%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child {
+  left: -22px;
+}
+.wrapper i:last-child {
+  right: -22px;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.heading-card {
+  margin: 25px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #000000;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.card .img img {
+  width: 27rem;
+  height: 20rem;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  text-align: center;
+  color:purple;
+  margin: 30px 10px 5px;
+}
+.carousel .card span {
+  color: #ffffff;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+  .card .img img {
+    width: 40rem;
+    height: 30rem;
+  }
+}
+#button {
+  display: inline-block;
+  background-color: purple;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #0026af;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (min-width: 500px) {
+  #button {
+    margin: 30px;
+  }
+  
 }
